@@ -6,11 +6,13 @@ type Vertex struct {
     X, Y float64
 }
 
+// A method with pointer receiver
 func (v *Vertex) Scale(f float64) {
     v.X = v.X * f
     v.Y = v.Y * f
 }
 
+// A function with pointer argument
 func ScaleFunc(v *Vertex, f float64) {
     v.X = v.X * f
     v.Y = v.Y * f
